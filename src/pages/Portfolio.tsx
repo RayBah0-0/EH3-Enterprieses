@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, MoveHorizontal, Hammer, Truck, Fence, Mountain, Layers, Eye } from 'lucide-react';
+import { ArrowRight, MoveHorizontal, Hammer, Truck, Fence, Mountain, Layers } from 'lucide-react';
 
 const showcases = [
   "/showcase.jpg",
@@ -81,19 +81,6 @@ const categories = [
       "/Fencing projects/IMG_2847.jpeg",
     ]
   },
-  {
-    id: "sunste",
-    title: "Sunste Blvd Project",
-    icon: <Eye className="w-5 h-5" />,
-    description: "A comprehensive project overview of one of our hallmark residential developments.",
-    images: [
-      "/Sunste blvd#2/IMG_0082.jpeg",
-      "/Sunste blvd#2/IMG_0630.jpeg",
-      "/Sunste blvd#2/IMG_1404.jpeg",
-      "/Sunste blvd#2/IMG_1407.jpeg",
-      "/Sunste blvd#2/IMG_1412.jpeg",
-    ]
-  }
 ];
 
 const beforeAfters = [
