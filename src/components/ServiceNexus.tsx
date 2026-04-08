@@ -6,22 +6,22 @@ const SERVICES = [
   {
     id: 'heavy-equipment',
     title: 'Heavy Equipment & Site Work',
-    image: '/showcase.jpg'
+    image: '/Excavation_trenching/IMG_1820.jpeg'
   },
   {
     id: 'residential',
     title: 'Residential Construction',
-    image: '/showcase1.jpg'
+    image: '/Framing/IMG_2164.jpeg'
   },
   {
     id: 'concrete',
     title: 'Concrete, Masonry & Hardscapes',
-    image: '/showcase3.jpg'
+    image: '/Hardscape/IMG_0377.jpeg'
   },
   {
     id: 'artificial-turf',
     title: 'Artificial Turf Installation',
-    image: '/showcase4.jpg'
+    image: '/Hardscape/IMG_0490.jpeg'
   }
 ];
 
@@ -55,27 +55,29 @@ export function ServiceNexus() {
         </div>
       </div>
 
-      {/* Floating Image Reveal */}
       <div className="pointer-events-none fixed inset-0 z-0 flex items-center justify-center opacity-0 md:opacity-100">
-        <AnimatePresence mode="wait">
-          {hoveredService && (
-            <motion.div
-              key={hoveredService}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 0.4, scale: 1 }}
-              exit={{ opacity: 0, scale: 1.05 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="absolute w-[600px] h-[400px]"
-            >
-              <img 
-                src={SERVICES.find(s => s.id === hoveredService)?.image} 
-                alt="Service preview" 
-                className="w-full h-full object-cover rounded-sm transition-opacity duration-500"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {SERVICES.map((service) => (
+          <motion.div
+            key={service.id}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ 
+              opacity: hoveredService === service.id ? 0.4 : 0, 
+              scale: hoveredService === service.id ? 1 : 0.95,
+              zIndex: hoveredService === service.id ? 10 : 0
+            }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="absolute w-[600px] h-[400px]"
+          >
+            <img 
+              src={service.image} 
+              alt={`${service.title} preview`} 
+              className="w-full h-full object-cover rounded-sm transition-opacity duration-500"
+              loading="eager"
+              decoding="async"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
+        ))}
       </div>
     </section>
   );

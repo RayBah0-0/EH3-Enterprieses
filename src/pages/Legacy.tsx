@@ -37,6 +37,8 @@ export function Legacy() {
             <img 
               src="/showcase5.jpg" 
               alt="Our Heritage" 
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover monochrome-img transition-transform duration-1000 group-hover:scale-105"
             />
           </motion.div>
@@ -107,6 +109,8 @@ export function Legacy() {
               <img 
                 src="/showcase6.jpg" 
                 alt="Military Heritage" 
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover monochrome-img transition-transform duration-1000 group-hover:scale-105"
               />
             </div>
@@ -115,6 +119,8 @@ export function Legacy() {
               <img 
                 src="/showcaqse2.jpg" 
                 alt="Our Team" 
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover monochrome-img transition-transform duration-1000 group-hover:scale-105"
               />
             </div>

@@ -63,7 +63,7 @@ export function Footer() {
           <div>
             <Link to="/" className="inline-block mb-8 group">
               <img 
-                src="/Logo.png" 
+                src="/2026 logo.png" 
                 alt="EH3 Enterprises" 
                 className="h-32 w-auto transition-all duration-700 drop-shadow-[0_0_20px_rgba(212,175,55,0.4)] group-hover:drop-shadow-[0_0_35px_rgba(212,175,55,0.6)]" 
               />
@@ -75,9 +75,6 @@ export function Footer() {
               Veteran-owned, family-operated general contracting company serving Pima and Maricopa County, Arizona. Specializing in excavation, construction, and outdoor installations.
             </p>
             <p className="micro-label text-gold/60 mt-4 tracking-[0.2em] uppercase">Licensed • Bonded • Insured</p>
-            <div className="mt-8">
-              <img src="/Better-Business-Bureau-Symbol-300x169.png" alt="BBB Accredited Business" className="h-12 w-auto opacity-50 hover:opacity-100 transition-opacity" />
-            </div>
           </div>
           <div className="mt-16 md:mt-auto micro-label text-white/30">
             © {new Date().getFullYear()} EH3 Enterprises, Inc. All Rights Reserved.

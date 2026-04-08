@@ -6,22 +6,22 @@ const services = [
   {
     title: "Heavy Equipment & Site Work",
     description: "Excavation, grading, trenching, demolition, site preparation, and skid steer & mini excavator work.",
-    image: "/showcase.jpg"
+    image: "/Excavation_trenching/IMG_1820.jpeg"
   },
   {
     title: "Residential Construction",
     description: "Ground-up home construction, home additions, and structural build-outs engineered with precision.",
-    image: "/showcase1.jpg"
+    image: "/Framing/IMG_2164.jpeg"
   },
   {
     title: "Concrete, Masonry & Hardscapes",
     description: "Driveways, patios, walkways, retaining walls, foundations, slabs, and paver installations.",
-    image: "/showcase3.jpg"
+    image: "/Hardscape/IMG_0377.jpeg"
   },
   {
     title: "Artificial Turf Installation",
     description: "Full turf installs, base prep & drainage, and low-maintenance landscaping for beautiful outdoor spaces.",
-    image: "/showcase4.jpg"
+    image: "/Hardscape/IMG_0490.jpeg"
   }
 ];
 
@@ -63,6 +63,8 @@ export function Services() {
                   src={service.image} 
                   alt={service.title} 
                   className="w-full h-full object-cover monochrome-img"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               

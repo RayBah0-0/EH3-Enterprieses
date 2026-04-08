@@ -44,6 +44,8 @@ export function Legacy() {
             src="/showcase5.jpg" 
             alt="Family-owned legacy" 
             className="w-full h-full object-cover monochrome-img"
+            loading="lazy"
+            decoding="async"
             referrerPolicy="no-referrer"
           />
           {/* Decorative border */}
