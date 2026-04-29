@@ -84,8 +84,15 @@ const categories = [
 ];
 
 const beforeAfters = [
-  { before: "/before.jpg", after: "/after.jpg", title: "Site Excavation" },
-  { before: "/before1.jpg", after: "/after2.jpg", title: "Project Transformation" }
+  { before: "/before and after/1B.jpeg", after: "/before and after/1A.jpeg", title: "Site Excavation & Clearing" },
+  { before: "/before and after/2B.jpeg", after: "/before and after/2A.jpeg", title: "Precision Grading" },
+  { before: "/before and after/3B.jpeg", after: "/before and after/3A.jpeg", title: "Structural Foundation" },
+  { before: "/before and after/4B.jpeg", after: "/before and after/4A.jpeg", title: "Terrain Transformation" },
+  { before: "/before and after/5B.jpeg", after: "/before and after/5A.JPG", title: "Development Groundwork" },
+  { before: "/before and after/6B.jpg", after: "/before and after/6A.jpg", title: "Landscape Architecture" },
+  { before: "/before and after/7B.jpeg", after: "/before and after/7A.jpg", title: "Infrastructure Prep" },
+  { before: "/before and after/8B.jpeg", after: "/before and after/8A.JPG", title: "Earthwork Execution" },
+  { before: "/before and after/9B.jpeg", after: "/before and after/9A.jpeg", title: "Property Enhancement" }
 ];
 
 function BeforeAfterSlider({ before, after, title }: { before: string, after: string, title: string }) {
