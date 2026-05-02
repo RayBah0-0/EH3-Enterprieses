@@ -68,11 +68,7 @@ export function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
           <a href="/" onClick={(e) => handleNavClick(e, '/')} className="flex items-center group py-4">
-            <img 
-              src="/2026 logo.png" 
-              alt="EH3 Enterprises" 
-              className="h-24 w-auto transition-all duration-700 drop-shadow-[0_0_20px_rgba(212,175,55,0.4)] group-hover:drop-shadow-[0_0_35px_rgba(212,175,55,0.6)] group-hover:scale-105" 
-            />
+            {/* Logo removed per user request */}
           </a>
           
           <div className="hidden md:flex items-center space-x-10">

@@ -35,11 +35,11 @@ const categories = [
     images: [
       "/Hardscape/IMG_0142.jpeg",
       "/Hardscape/IMG_0143.jpeg",
-      "/Hardscape/IMG_0377.jpeg",
-      "/Hardscape/IMG_0380.jpeg",
-      "/Hardscape/IMG_0430.jpeg",
+      "/new photos/hardscapes &masonry1.jpeg",
+      "/new photos/hardscapes &masonry2.jpeg",
+      "/new photos/hardscapes &masonry3.jpeg",
       "/Hardscape/IMG_0490.jpeg",
-    ]
+    ] as (string | null)[]
   },
   {
     id: "skidsteer",
@@ -47,11 +47,11 @@ const categories = [
     icon: <Truck className="w-5 h-5" />,
     description: "Specialized skid steer and mini-excavator work for tight-access sites and complex grading.",
     images: [
-      "/Skid steer work/IMG_0212.jpeg",
+      "/new photos/heavy equipment operations1.jpeg",
       "/Skid steer work/IMG_0224.jpeg",
-      "/Skid steer work/IMG_0285.jpeg",
+      "/new photos/heavy equipment operations2.jpeg",
       "/Skid steer work/IMG_0314.jpeg",
-      "/Skid steer work/IMG_0735.jpeg",
+      "/new photos/heavy equipment operations3.jpeg",
       "/Skid steer work/IMG_1339.jpeg",
     ]
   },
@@ -65,9 +65,9 @@ const categories = [
       "/Framing/IMG_0690.jpeg",
       "/Framing/IMG_2164.jpeg",
       "/Framing/IMG_2167.jpeg",
-      "/Framing/IMG_2254.jpeg",
+      "/new photos/structural farming1.jpeg",
       "/Framing/IMG_2257.jpeg",
-    ]
+    ] as (string | null)[]
   },
   {
     id: "fencing",
@@ -79,6 +79,8 @@ const categories = [
       "/Fencing projects/IMG_2785.jpeg",
       "/Fencing projects/IMG_2810.jpeg",
       "/Fencing projects/IMG_2847.jpeg",
+      "/new photos/fencing1.jpeg",
+      "/new photos/fencing2.jpeg",
     ]
   },
 ];
@@ -273,17 +275,25 @@ export function Portfolio() {
                     transition={{ delay: imgIndex * 0.1 }}
                     className="aspect-square relative overflow-hidden group bg-white/5"
                   >
-                    <div className="absolute inset-0 bg-obsidian/40 mix-blend-overlay z-10 transition-opacity duration-700 group-hover:opacity-0" />
-                    <img 
-                      src={src} 
-                      alt={`${category.title} Project ${imgIndex + 1}`} 
-                      className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex items-end p-6">
-                      <span className="micro-label text-gold text-xs">EH3 Signature Project</span>
-                    </div>
+                    {src ? (
+                      <>
+                        <div className="absolute inset-0 bg-obsidian/40 mix-blend-overlay z-10 transition-opacity duration-700 group-hover:opacity-0" />
+                        <img 
+                          src={src} 
+                          alt={`${category.title} Project ${imgIndex + 1}`} 
+                          className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex items-end p-6">
+                          <span className="micro-label text-gold text-xs">EH3 Signature Project</span>
+                        </div>
+                      </>
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center border border-dashed border-white/10">
+                        <span className="micro-label text-white/20 text-xs uppercase tracking-widest">Coming Soon</span>
+                      </div>
+                    )}
                   </motion.div>
                 ))}
               </div>

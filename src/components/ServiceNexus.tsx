@@ -11,17 +11,17 @@ const SERVICES = [
   {
     id: 'residential',
     title: 'Residential Construction',
-    image: '/Framing/IMG_2164.jpeg'
+    image: '/new photos/residential construction.jpg'
   },
   {
     id: 'concrete',
     title: 'Concrete, Masonry & Hardscapes',
-    image: '/Hardscape/IMG_0377.jpeg'
+    image: '/new photos/comcrete, masonry, hardscapes.jpg'
   },
   {
     id: 'artificial-turf',
     title: 'Artificial Turf Installation',
-    image: '/Hardscape/IMG_0490.jpeg'
+    image: '/new photos/artificial turf.jpeg'
   }
 ];
 

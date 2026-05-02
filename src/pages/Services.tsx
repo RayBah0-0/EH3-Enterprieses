@@ -11,17 +11,17 @@ const services = [
   {
     title: "Residential Construction",
     description: "Ground-up home construction, home additions, and structural build-outs engineered with precision.",
-    image: "/Framing/IMG_2164.jpeg"
+    image: "/new photos/residential construction.jpg"
   },
   {
     title: "Concrete, Masonry & Hardscapes",
     description: "Driveways, patios, walkways, retaining walls, foundations, slabs, and paver installations.",
-    image: "/Hardscape/IMG_0377.jpeg"
+    image: "/new photos/comcrete, masonry, hardscapes.jpg"
   },
   {
     title: "Artificial Turf Installation",
     description: "Full turf installs, base prep & drainage, and low-maintenance landscaping for beautiful outdoor spaces.",
-    image: "/Hardscape/IMG_0490.jpeg"
+    image: "/new photos/artificial turf.jpeg"
   }
 ];
 
